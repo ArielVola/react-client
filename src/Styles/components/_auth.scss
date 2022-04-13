@@ -1,0 +1,133 @@
+.auth__login-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.auth__side-content-container, .auth__login-form-container {
+    height: 99vh;
+}
+
+.auth__side-content-container {
+    flex-grow: 4;
+    width: 30vw;
+}
+
+.auth__login-form-container {
+    align-items: center;
+    display: flex;
+    flex-grow: 6;
+    justify-content: center;
+    width: 100vh;
+}
+
+.auth__side-content-img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.auth__login-form {
+    width: 70%;
+}
+
+.auth__login-title {
+    color: $primary;
+    font-weight: 500;
+    text-align: center;
+}
+
+.auth__login-social-media-buttons {
+    display: flex;
+    margin-top: 70px;
+}
+
+.auth__login-or {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 3em 0 1em 0;
+}
+
+.auth__login-or-label {
+    color: $primary;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.auth__login-inputs {
+    
+}
+
+.auth__login-input {
+    width: 93%;
+    height: 52px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    color: $black;
+    border: .3px solid darken($color: #FAF6F3, $amount: 2);
+    background-color: #FAF6F3;
+    margin-top: 15px;
+
+    &:focus {
+        outline: none;
+        border: .3px solid darken($color: #FAF6F3, $amount: 8);
+        transition: border .3s ease;
+    }
+}
+
+.auth__login-forgot {
+    display: flex;
+    justify-content: end;
+}
+
+.auth__login-forgot-label {
+    margin: 15px 25px 0 0;
+    font-size: 15px;
+    color: #2471A3;
+}
+
+.auth__login-forgot-label:hover {
+    transition: color .3s ease;
+    color: darken($color: #2471A3, $amount: 10);
+}
+
+.auth__login-form-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.auth__login-form-login-btn {
+    transition: background-color .3s ease;
+    background-color: $primary;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;   
+    height: 60px;
+    width: 200px;
+}
+
+.auth__login-form-login-btn:hover {
+    transition: background-color .3s ease;
+    background-color: darken($color: $primary, $amount: 3);
+}
+
+.auth__login-form-new-user {
+    text-align: end;
+    width: 100%;
+    margin-right: 25px;
+    font-size: 16px;
+    color: #566573;
+}
+
+.auth__login-form-new-user-action {
+    color: $primary;
+}
+
+.auth__login-form-new-user-action:hover {
+    transition: color .5s ease;
+    color: darken($color: $primary, $amount: 12);
+}
