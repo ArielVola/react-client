@@ -1,4 +1,5 @@
 import React from 'react'
+import { FacebookButtonComponent } from '../FacebookButtonComponent'
 import { GoogleButtonComponent } from './GoogleButtonComponent'
 
 export const LoginFormComponent = () => {
@@ -7,7 +8,7 @@ export const LoginFormComponent = () => {
             <form className='auth__login-form'>
                 <h2 className='auth__login-title'>LOGIN TO REACT APPLICATION</h2>
                 <div className='auth__login-social-media-buttons'>
-                    <GoogleButtonComponent />
+                    <FacebookButtonComponent />
                     <GoogleButtonComponent />
                 </div>
                 

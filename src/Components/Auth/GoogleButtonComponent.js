@@ -1,7 +1,10 @@
 import React from 'react'
 import GoogleLogin from 'react-google-login'
+import { googleClientId } from '../../env/dev';
 
 export const GoogleButtonComponent = () => {
+
+    const clientId = googleClientId;
 
     const responseGoogle = (response) => {
         console.log(response);
@@ -9,17 +12,17 @@ export const GoogleButtonComponent = () => {
 
     return (
         <GoogleLogin
-        clientId="465022960409-6g48d99585nuim9oml4sdha8v5cjkqpe.apps.googleusercontent.com"
+        clientId={clientId}
         render={renderProps => (
-            <div 
-            className="google-btn"
+          <div 
+            className="media-btn"
             onClick={renderProps.onClick} disabled={renderProps.disabled}
           >
-          <div className="google-icon-wrapper">
-              <img className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="google button" />
+          <div className="media-icon-wrapper">
+              <img className="media-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="google button" />
           </div>
-            <p className="btn-text">
-                <span>Sign in with google</span>
+            <p className="media-btn-text">
+                <span>Continue with Google</span>
             </p>
           </div>
         )}

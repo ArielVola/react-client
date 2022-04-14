@@ -54,10 +54,6 @@
     text-align: center;
 }
 
-.auth__login-inputs {
-    
-}
-
 .auth__login-input {
     width: 93%;
     height: 52px;
@@ -78,7 +74,7 @@
 
 .auth__login-forgot {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .auth__login-forgot-label {
