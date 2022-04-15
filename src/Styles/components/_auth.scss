@@ -1,4 +1,4 @@
-.auth__login-container {
+.auth__login-container, .auth__register-container {
     display: flex;
     flex-direction: row;
 }
@@ -12,7 +12,7 @@
     width: 30vw;
 }
 
-.auth__login-form-container {
+.auth__login-form-container, .auth__register-form-container {
     align-items: center;
     display: flex;
     flex-grow: 6;
@@ -26,11 +26,11 @@
     width: 100%;
 }
 
-.auth__login-form {
+.auth__login-form, .auth__register-form {
     width: 70%;
 }
 
-.auth__login-title {
+.auth__login-title, .auth__register-title {
     color: $primary;
     font-weight: 500;
     text-align: center;
@@ -54,7 +54,11 @@
     text-align: center;
 }
 
-.auth__login-input {
+.auth__register-inputs {
+    margin-top: 100px;
+}
+
+.auth__login-input, .auth__register-input  {
     width: 93%;
     height: 52px;
     padding-left: 15px;
@@ -88,14 +92,14 @@
     color: darken($color: #2471A3, $amount: 10);
 }
 
-.auth__login-form-footer {
+.auth__login-form-footer, .auth__register-form-footer {
     align-items: center;
     display: flex;
     flex-direction: row;
     margin-top: 50px;
 }
 
-.auth__login-form-login-btn {
+.auth__login-form-login-btn, .auth__register-form-register-btn  {
     transition: background-color .3s ease;
     background-color: $primary;
     border: none;
@@ -106,12 +110,12 @@
     width: 200px;
 }
 
-.auth__login-form-login-btn:hover {
+.auth__login-form-login-btn:hover, .auth__register-form-register-btn:hover {
     transition: background-color .3s ease;
     background-color: darken($color: $primary, $amount: 3);
 }
 
-.auth__login-form-new-user {
+.auth__login-form-new-user, .auth__register-form-new-user  {
     text-align: end;
     width: 100%;
     margin-right: 25px;
@@ -119,11 +123,11 @@
     color: #566573;
 }
 
-.auth__login-form-new-user-action {
+.auth__login-form-new-user-action, .auth__register-form-new-user-action {
     color: $primary;
 }
 
-.auth__login-form-new-user-action:hover {
+.auth__login-form-new-user-action:hover, .auth__register-form-new-user-action:hover {
     transition: color .5s ease;
     color: darken($color: $primary, $amount: 12);
 }

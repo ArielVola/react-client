@@ -1,9 +1,9 @@
-import { LoginScreen } from "./Screens/LoginScreen";
+import { AppRouter } from "./Routers/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      <LoginScreen />
+      <AppRouter />
     </div>
   );
 }
