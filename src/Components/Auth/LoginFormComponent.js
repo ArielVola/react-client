@@ -39,7 +39,7 @@ export const LoginFormComponent = () => {
                     </div>
                     
                     <div className='auth__login-inputs'>
-                        <input className='auth__login-input' type="email" name='email' value={email} placeholder='Email' onChange= { handleInputChange } autoComplete='off' />
+                        <input className='auth__login-input' type="email" name='email' value={email} placeholder='Email' onChange= { handleInputChange } autoComplete='off' autoFocus />
                         <input className='auth__login-input' type="password" name='password' value={password} placeholder='Password' onChange= { handleInputChange } />
                     </div>
 

@@ -88,7 +88,7 @@ export const RegisterFormComponent = () => {
             <h2 className='auth__register-title'>REGISTER TO REACT APPLICATION</h2>
         
             <div className='auth__register-inputs'>
-                    <input className='auth__register-input' onChange= { handleInputChange } type="email" name='email' placeholder='Email' autoComplete='off' />
+                    <input className='auth__register-input' onChange= { handleInputChange } type="email" name='email' placeholder='Email' autoComplete='off' autoFocus />
                     <input className='auth__register-input' onChange= { handleInputChange } type="password" name='password' placeholder='Password' />
                     <input className='auth__register-input' onChange= { handleInputChange } type="password" name='password2' placeholder='Repeat password' />
             
