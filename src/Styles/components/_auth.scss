@@ -1,4 +1,4 @@
-.auth__login-container, .auth__register-container {
+.auth__login-container, .auth__register-container, .auth__verify-container {
     display: flex;
     flex-direction: row;
 }
@@ -12,7 +12,7 @@
     width: 30vw;
 }
 
-.auth__login-form-container, .auth__register-form-container {
+.auth__login-form-container, .auth__register-form-container, .auth__verify-form-container {
     align-items: center;
     display: flex;
     flex-grow: 6;
@@ -30,7 +30,7 @@
     width: 70%;
 }
 
-.auth__login-title, .auth__register-title {
+.auth__login-title, .auth__register-title, .auth__verify-title {
     color: $primary;
     font-weight: 500;
     text-align: center;
@@ -68,6 +68,7 @@
     border: .3px solid darken($color: #FAF6F3, $amount: 2);
     background-color: #FAF6F3;
     margin-top: 15px;
+    caret-color: $primary;
 
     &:focus {
         outline: none;
@@ -97,6 +98,10 @@
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+}
+
+.auth__register-form-footer {
+    margin-top: 90px;
 }
 
 .auth__login-form-login-btn, .auth__register-form-register-btn  {
@@ -133,8 +138,66 @@
 }
 
 .auth__register-error {
-    color: darken($color: #E74C3C, $amount: 3);
+    color: $red;
     font-size: 15px;
     width: 100%;
     height: 20px;
+}
+
+.auth__verify-subtitle {
+    color: $black;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
+
+.auth__verify-input {
+    border-color: lighten($color: $black, $amount: 10);
+    color: $primary;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    margin-right: 10px;
+    text-align: center;
+    width: 50px;
+}
+
+.auth__verify-inputs-container {
+    width: 100%;
+    text-align: center;
+}
+
+.auth__verify-button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.auth__verify-button {
+    transition: background-color .3s ease;
+    background-color: $primary;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;   
+    height: 60px;
+    width: 200px;
+}
+
+.auth__verify-button:hover{
+    transition: background-color .3s ease;
+    background-color: darken($color: $primary, $amount: 3);
+}
+
+.auth__verify-error-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+}
+
+.auth__verify-error-label {
+    color: $red;
+    font-size: 15px;
 }

@@ -1,11 +1,14 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify';
 import { API_SERVER } from '../../env/dev';
 import { useForm } from '../../Hooks/useForm';
 import { LoadingComponent } from '../LoadingComponent';
 
 export const RegisterFormComponent = () => {
+
+  const navigate = useNavigate();
 
   const [ formValues, handleInputChange ] = useForm({
     email: '',
@@ -29,6 +32,18 @@ export const RegisterFormComponent = () => {
     if(res.data.statusCode === 200) {
       setFormError(res.data.message.toLowerCase());
     }
+
+    toast.success(res.data.msg, {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+    navigate('/auth/login');
+
     setLoading(false);
   }
 
