@@ -44,7 +44,7 @@ export const LoginFormComponent = () => {
                     </div>
 
                     <div className='auth__login-forgot'>
-                        <span className='auth__login-forgot-label pointer'>Forgot Password?</span>
+                        <Link to='/auth/forget-my-password' className='auth__login-forgot-label pointer'>Forgot Password?</Link>
                     </div>
 
                     <div className='auth__login-form-footer'>
