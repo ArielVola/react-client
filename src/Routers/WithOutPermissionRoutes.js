@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { ChangePasswordScreen } from '../Screens/ChangePasswordScreen'
 import { ForgetPasswordScreen } from '../Screens/ForgetPasswordScreen'
 import { LoginScreen } from '../Screens/LoginScreen'
 import { RegisterScreen } from '../Screens/RegisterScreen'
@@ -28,6 +29,11 @@ export const WithOutPermissionRoutes = () => {
                 <Route
                     path='/forget-my-password/'
                     element={<ForgetPasswordScreen/>}    
+                />
+
+                <Route  
+                    path='/restore-with-us/:restoreCode'
+                    element={<ChangePasswordScreen/>}    
                 />
 
                 <Route

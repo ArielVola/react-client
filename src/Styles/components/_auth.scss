@@ -1,9 +1,9 @@
-.auth__login-container, .auth__register-container, .auth__verify-container, .auth__forget-password-container {
+.auth__login-container, .auth__register-container, .auth__verify-container, .auth__forget-password-container, .auth__change-password-container {
     display: flex;
     flex-direction: row;
 }
 
-.auth__side-content-container, .auth__login-form-container, .auth__forget-form-container {
+.auth__side-content-container, .auth__login-form-container, .auth__forget-form-container, .auth__change-password-form-container {
     height: 99vh;
 }
 
@@ -12,7 +12,7 @@
     width: 30vw;
 }
 
-.auth__login-form-container, .auth__register-form-container, .auth__verify-form-container, .auth__forget-form-container {
+.auth__login-form-container, .auth__register-form-container, .auth__verify-form-container, .auth__forget-form-container, .auth__change-password-form-container {
     align-items: center;
     display: flex;
     flex-grow: 6;
@@ -26,11 +26,11 @@
     width: 100%;
 }
 
-.auth__login-form, .auth__register-form, .auth__forget-form {
+.auth__login-form, .auth__register-form, .auth__forget-form, .auth__change-password-form {
     width: 70%;
 }
 
-.auth__login-title, .auth__register-title, .auth__verify-title, .auth__forget-title{
+.auth__login-title, .auth__register-title, .auth__verify-title, .auth__forget-title, .auth__change-title{
     color: $primary;
     font-weight: 500;
     text-align: center;
@@ -58,7 +58,7 @@
     margin-top: 100px;
 }
 
-.auth__login-input, .auth__register-input, .auth__forget-input  {
+.auth__login-input, .auth__register-input, .auth__forget-input, .auth__change-password-input  {
     width: 93%;
     height: 52px;
     padding-left: 15px;
@@ -137,14 +137,14 @@
     color: darken($color: $primary, $amount: 12);
 }
 
-.auth__register-error {
+.auth__register-error, .auth__reset-error, .auth__change-password-error {
     color: $red;
     font-size: 15px;
     width: 100%;
     height: 20px;
 }
 
-.auth__verify-subtitle {
+.auth__verify-subtitle, .auth__change-password-subtitle {
     color: $black;
     font-weight: 600;
     font-size: 18px;
